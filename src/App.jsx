@@ -20,7 +20,7 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const AppLayout = lazy(() => import("./ui/AppLayout"));
 const Spinner = lazy(() => import("./ui/Spinner"));
 
-const queryClieny = new QueryClient({
+const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       refetchOnWindowFocus: false,
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <QueryClientProvider client={queryClieny}>
+    <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
       <GlobalStyles />
       <Suspense fallback={<Spinner />}>

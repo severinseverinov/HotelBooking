@@ -1,0 +1,191 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="300px" height="213px" viewBox="0 0 300 213">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="454.4" y1="501.9" x2="849.9" y2="501.9" spreadMethod="pad">
+<stop  offset="0%" stop-color="#2A2577"/>
+
+<stop  offset="100%" stop-color="#423AB7"/>
+</linearGradient>
+
+<filter id="Filter_1" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#110A7F" flood-opacity="1" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="1.3333333333333333,1.3333333333333333" result="result3"/>
+
+<feOffset dx="-2.462645901302633" dy="3.152043014426888" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<filter id="Filter_2" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#110A7F" flood-opacity="1" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="1.3333333333333333,1.3333333333333333" result="result3"/>
+
+<feOffset dx="-2.462645901302633" dy="3.152043014426888" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<filter id="Filter_3" x="-20%" y="-57.83975260486213%" width="140%" height="215.67950520972425%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#181189" flood-opacity="1" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="1.3333333333333333,1.3333333333333333" result="result3"/>
+
+<feOffset dx="-2.462645901302633" dy="3.152043014426888" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<g id="Layer1_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 849.25 621.75
+L 849.25 382.35 455 382.35 455 621.75 849.25 621.75 Z"/>
+</g>
+
+<g id="Sembol_2_0_Layer0_0_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 569.95 542.35
+Q 588.3 524.05 588.3 498.15 588.3 472.25 569.95 453.9 551.65 435.6 525.75 435.6 499.85 435.6 481.5 453.9 463.2 472.25 463.2 498.15 463.2 524.05 481.5 542.35 499.85 560.7 525.7 589.45 551.65 560.7 569.95 542.35 Z"/>
+</g>
+
+<g id="Layer1_4_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 912.35 212.55
+Q 912.35 209.5 910.15 207.3 908 205.15 904.95 205.15 901.9 205.15 899.7 207.3 897.55 209.5 897.55 212.55 897.55 215.6 899.7 217.75 901.9 219.95 904.95 219.95 908 219.95 910.15 217.75 912.35 215.6 912.35 212.55 Z"/>
+</g>
+
+<g id="Sembol_1_0_Layer0_0_STROKES_1_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 1126.35 254.7
+L 1126.3 254.7 1115.85 256.6
+Q 1112.35 257.3 1103.95 258.75
+L 1067.8 264.25 1052.55 266 1030.85 267.75 1017.6 268.35 980.95 268.15 980.65 268.1 965.95 267.25 931.5 263.35 910.9 259.9 885.15 254.7 885.05 254.7
+Q 884.8 254.65 884.55 254.8 884.35 254.95 884.3 255.2 884.2 255.8 884.7 255.95
+L 894.75 259.35
+Q 899.8 261 906.35 262.9
+L 935.05 269.85 960.45 273.85
+Q 966.4 274.6 971.4 275
+L 979.8 275.65 980.15 275.7 982.65 275.8
+Q 987.75 276.15 994.1 276.3
+L 1014.3 276.2 1028.6 275.5
+Q 1036 274.9 1039.85 274.5
+L 1071.35 270.05 1095.25 264.95 1106.55 262 1106.95 261.85 1126.65 255.95
+Q 1126.9 255.9 1127.05 255.65 1127.2 255.4 1127.1 255.15 1126.95 254.6 1126.35 254.7 Z"/>
+</g>
+
+<font horiz-adv-x="2048">
+<!--  Font Adı: SansSerif Bold
+Satıcı Kimliği: Alts
+Copyright 1992-96 Payne Loving Trust. All rights reserved. By law this program may not be copied for other or modified.
+URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=Alts&Name=SansSerif&PSName=SansSerifBold&applanguage=tr_TR-->
+<font-face font-family="SansSerif_Bold" units-per-em="2048" ascent="1927" descent="451"/>
+
+<glyph unicode="H" horiz-adv-x="1479" d="
+M 1345 0
+L 1038 0 1038 676 446 676 446 0 139 0 139 1493 446 1493 446 932 1038 932 1038 1493 1345 1493 1345 0 Z"/>
+
+<glyph unicode="O" horiz-adv-x="1593" d="
+M 1520 733
+Q 1520 381 1320 168 1121 -45 801 -45 459 -45 264 186 82 400 82 738 82 1063 254 1276 453 1518 813 1518 1147 1518 1340 1287 1520 1069 1520 733 Z
+M 1225 733
+Q 1225 975 1111 1113 998 1250 797 1250 602 1250 490 1114 377 977 377 742 377 498 494 358 611 219 817 219 1000 219 1112 361 1225 504 1225 733 Z"/>
+
+<glyph unicode="T" horiz-adv-x="1251" d="
+M 1224 1237
+L 788 1237 788 0 481 0 481 1237 28 1237 28 1493 1224 1493 1224 1237 Z"/>
+
+<glyph unicode="E" horiz-adv-x="1366" d="
+M 1278 0
+L 162 0 162 1493 1243 1493 1243 1237 469 1237 469 897 1184 897 1184 641 469 641 469 256 1278 256 1278 0 Z"/>
+
+<glyph unicode="L" horiz-adv-x="1251" d="
+M 1186 0
+L 164 0 164 1493 471 1493 471 256 1186 256 1186 0 Z"/>
+
+<glyph unicode=" " horiz-adv-x="569"/>
+
+<glyph unicode="B" horiz-adv-x="1479" d="
+M 1069 467
+Q 1069 643 868 643
+L 475 643 475 256 868 256
+Q 1069 256 1069 467 Z
+M 1362 432
+Q 1362 254 1241 135 1104 0 858 0
+L 168 0 168 1493 815 1493
+Q 1030 1493 1177 1389 1323 1284 1323 1104 1323 932 1182 797 1362 653 1362 432 Z
+M 1030 1071
+Q 1030 1235 840 1235
+L 475 1235 475 897 831 897
+Q 1030 897 1030 1071 Z"/>
+
+<glyph unicode="K" horiz-adv-x="1479" d="
+M 1468 0
+L 1095 0 618 651 458 479 458 0 151 0 151 1493 458 1493 458 838 1042 1493 1408 1493 816 847 1468 0 Z"/>
+
+<glyph unicode="I" horiz-adv-x="569" d="
+M 437 0
+L 130 0 130 1493 437 1493 437 0 Z"/>
+
+<glyph unicode="N" horiz-adv-x="1479" d="
+M 1353 0
+L 1051 0 446 1045 446 0 139 0 139 1493 442 1493 1046 469 1046 1493 1353 1493 1353 0 Z"/>
+
+<glyph unicode="G" horiz-adv-x="1593" d="
+M 1459 -6
+L 1273 -6 1236 178
+Q 1068 -45 763 -45 486 -45 294 160 87 379 87 725 87 1086 285 1302 482 1518 808 1518 1090 1518 1260 1381 1420 1252 1459 1020
+L 1178 1020
+Q 1095 1266 810 1266 615 1266 499 1126 382 985 382 750 382 512 505 357 628 201 816 201 966 201 1076 299 1187 398 1203 549
+L 859 549 859 803 1459 803 1459 -6 Z"/>
+</font>
+</defs>
+
+<g transform="matrix( 0.76104736328125, 0, 0, 0.8862152099609375, -346.3,-338.3) ">
+<use xlink:href="#Layer1_0_FILL"/>
+</g>
+
+<g filter="url(#Filter_1)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 0.7611846923828125, 0, 0, 0.75848388671875, 56.55,96.9) ">
+<g transform="matrix( 0.64300537109375, -0.5391693115234375, 0.548583984375, 0.65423583984375, -611.3,-45.8) ">
+<use xlink:href="#Sembol_2_0_Layer0_0_FILL"/>
+</g>
+</g>
+</g>
+
+<g filter="url(#Filter_2)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 0.7611846923828125, 0, 0, 0.75848388671875, 119.7,73.75) ">
+<clipPath id="Mask_Mask_1">
+<rect x="-3" y="-2" width="191.5" height="96.6" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_1)" writing-mode="lr"><tspan x="26.65" y="36.7" baseline-shift="0%" kerning="auto" font-family="SansSerif_Bold" font-weight="bold" font-size="39" fill="#FFFFFF" xml:space="preserve">HOTEL </tspan><tspan x="-0.45" y="84" baseline-shift="0%" kerning="auto" font-family="SansSerif_Bold" font-weight="bold" font-size="39" fill="#FFFFFF" xml:space="preserve">BOOKING</tspan></text>
+</g>
+</g>
+
+<g transform="matrix( 0.7611541748046875, -0.003387451171875, 0.003387451171875, 0.758453369140625, -38.15,70.45) ">
+<clipPath id="Mask_Mask_2">
+<rect x="74.35" y="-2" width="107.65" height="73.65" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_2)" writing-mode="lr"><tspan x="84.85" y="56.45" baseline-shift="0%" kerning="auto" font-family="SansSerif_Bold" font-weight="bold" font-size="60" fill="#342D92" xml:space="preserve">HB</tspan></text>
+</g>
+
+<g transform="matrix( 0.421722412109375, 0, 0, 0.42022705078125, -282.9,53) ">
+<use xlink:href="#Layer1_4_FILL"/>
+</g>
+
+<g filter="url(#Filter_3)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 0.7611846923828125, 0, 0, 0.75848388671875, 191.75,151.4) ">
+<g transform="matrix( 1, 0, 0, 1, -1005.7,-265.2) ">
+<use xlink:href="#Sembol_1_0_Layer0_0_STROKES_1_FILL"/>
+</g>
+</g>
+</g>
+</svg>

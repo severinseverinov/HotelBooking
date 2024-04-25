@@ -9,6 +9,8 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import GlobalStyles from "./styles/GlobalStyles";
 
+import { loader as cabinLoader } from "./pages/Cabins";
+
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Bookings = lazy(() => import("./pages/Bookings"));
 const Cabins = lazy(() => import("./pages/Cabins"));
@@ -37,7 +39,11 @@ const router = createBrowserRouter([
       { index: true, element: <Navigate to="dashboard" replace /> },
       { path: "dashboard", element: <Dashboard /> },
       { path: "bookings", element: <Bookings /> },
-      { path: "cabins", element: <Cabins /> },
+      {
+        path: "cabins",
+        element: <Cabins />,
+        loader: cabinLoader,
+      },
       { path: "users", element: <Users /> },
       { path: "settings", element: <Settings /> },
       { path: "account", element: <Account /> },

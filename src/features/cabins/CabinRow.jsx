@@ -57,7 +57,7 @@ const queryClient = useQueryClient();
         queryKey: ["cabins"],
       });
     },
-    onError: err => toast.error(err.message),
+    onError: (err) => toast.error(err.message),
   });
 
   return (

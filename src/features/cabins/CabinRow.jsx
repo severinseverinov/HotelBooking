@@ -18,6 +18,7 @@ const TableRow = styled.div`
 
 const Img = styled.img`
   display: block;
+  margin-left: 5px;
   width: 6.4rem;
   aspect-ratio: 3 / 2;
   object-fit: cover;
@@ -46,7 +47,7 @@ const Discount = styled.div`
 function CabinRow({ cabin }) {
   const { name, maxCapacity, regularPrice, discount, image, id } = cabin;
 
-const queryClient = useQueryClient();
+  const queryClient = useQueryClient();
 
   const { isPending: isDeleting, mutate } = useMutation({
     mutationFn: deleteCabin,
@@ -57,7 +58,7 @@ const queryClient = useQueryClient();
         queryKey: ["cabins"],
       });
     },
-    onError: (err) => toast.error(err.message),
+    onError: err => toast.error(err.message),
   });
 
   return (

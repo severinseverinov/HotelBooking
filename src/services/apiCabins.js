@@ -36,6 +36,8 @@ const hasImageUrl = newCabin.image?.startsWith?.(supabaseUrl);
     throw new Error("Cabin could not be created");
   }
 
+if (hasImageUrl) return data;
+
   const { storagError } = await supabase.storage
     .from("cabin-images")
     .upload(imageName, newCabin.image);

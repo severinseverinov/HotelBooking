@@ -1,9 +1,20 @@
 import BookingRow from "./BookingRow";
 import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
+import Empty from "../../ui/Empty";
+import {useBookings} from "./useBookings"
+import Spinner from "../../ui/Spinner";
 
 function BookingTable() {
-  const bookings = [];
+  const {bookings, isPending, error} = useBookings();
+
+
+// use a suspense instead of isPending
+if(isPending) return <Spinner />;
+
+
+if(!bookings) return <Empty resourceName="bookings" />
+
 
   return (
     <Menus>
@@ -22,7 +33,7 @@ function BookingTable() {
           render={(booking) => (
             <BookingRow key={booking.id} booking={booking} />
           )}
-        />
+        /> 
       </Table>
     </Menus>
   );

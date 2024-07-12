@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 
 import GlobalStyles from "./styles/GlobalStyles";
 import Booking from "./pages/Booking";
+import Checkin from "./pages/Checkin";
 
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Bookings = lazy(() => import("./pages/Bookings"));
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       { path: "dashboard", element: <Dashboard /> },
       { path: "bookings", element: <Bookings /> },
       { path: "bookings/:bookingId", element: <Booking /> },
+      { path: "checkin/:bookingId", element: <Checkin /> },
       {
         path: "cabins",
         element: <Cabins />,

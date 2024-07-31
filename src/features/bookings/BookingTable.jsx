@@ -1,23 +1,18 @@
 import BookingRow from "./BookingRow";
+
 import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
 import Empty from "../../ui/Empty";
-import {useBookings} from "./useBookings"
 import Spinner from "../../ui/Spinner";
-import Pagination from "../../ui/Pagination"
-
+import { useBookings } from "./useBookings";
+import Pagination from "../../ui/Pagination";
 
 function BookingTable() {
-  const {bookings, isPending, count} = useBookings();
+  const { isPending, bookings, count } = useBookings();
 
+  if (isPending) return <Spinner />;
 
-// use a suspense instead of isPending
-if(isPending) return <Spinner />;
-console.log(bookings)
-
-
-if(!bookings) return <Empty resourceName="bookings" />
-
+  if (!bookings) return <Empty resourceName="Bookings" />;
 
   return (
     <Menus>
@@ -33,14 +28,11 @@ if(!bookings) return <Empty resourceName="bookings" />
 
         <Table.Body
           data={bookings}
-          render={(booking) => (
-            <BookingRow key={booking.id} booking={booking} />
-          )}
+          render={booking => <BookingRow key={booking.id} booking={booking} />}
         />
-
         <Table.Footer>
-          <Pagination count={count}/>
-          </Table.Footer> 
+          <Pagination count={count} />
+        </Table.Footer>
       </Table>
     </Menus>
   );

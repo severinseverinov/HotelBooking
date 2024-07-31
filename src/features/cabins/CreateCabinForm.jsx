@@ -1,66 +1,60 @@
-import styled, { css } from "styled-components";
+import { useForm } from "react-hook-form";
 
 import Input from "../../ui/Input";
 import Form from "../../ui/Form";
 import Button from "../../ui/Button";
 import FileInput from "../../ui/FileInput";
 import Textarea from "../../ui/Textarea";
-import { useForm } from "react-hook-form";
 import FormRow from "../../ui/FormRow";
-import { useCreateCabin } from "./useCreateCabin";
-import { useEditCabin } from "./useEditCabin";
+import useCreateCabin from "./useCreateCabin";
+import useEditCabin from "./useEditCabin";
 
+function CreateCabinForm({ editCabin = {}, onClose }) {
+  const { id: editId, ...editValues } = editCabin;
+  const isEditSession = Boolean(editId);
 
-const Label = styled.label`
-  font-weight: 500;
-`;
-
-const Error = styled.span`
-  font-size: 1.4rem;
-  color: var(--color-red-700);
-`;
-
-function CreateCabinForm({cabinToEdit = {}, onCloseModal }) {
-  const {isCreating, createCabin } = useCreateCabin();
-  const { isEditing, editCabin} = useEditCabin(); 
-
-  
-const {id: editId, ...editValues } = cabinToEdit;
-const isEditSession = Boolean(editId);
+  const { createCabin, isCreating } = useCreateCabin();
+  const { editNewCabin, isEditing } = useEditCabin();
 
   const { register, handleSubmit, reset, getValues, formState } = useForm({
-    defaultValues: isEditSession ? editValues : {}, 
-});
+    defaultValues: isEditSession ? editValues : {},
+  });
   const { errors } = formState;
 
-
-
-
-const isWorking = isCreating || isEditing;
-
+  const isWorking = isCreating || isEditing;
 
   function onSubmit(data) {
+    const image = typeof data.image === "string" ? data.image : data.image[0];
 
-const image = typeof data.image === "string" ? data.image : data.image[0];
-
-if(isEditSession) editCabin({newCabinData: {...data, image}, id: editId }, {
-  onSuccess: (data) => {reset()
-    onCloseModal?.()
-  },
-});
-else createCabin({ ...data, image: data.image }, {
-  onSuccess: (data) => {reset()
-    onCloseModal?.();
-  },
-});
+    isEditSession
+      ? editNewCabin(
+          { newCabinData: { ...data, image }, id: editId },
+          {
+            onSuccess: () => {
+              reset();
+              onClose?.();
+            },
+          }
+        )
+      : createCabin(
+          { ...data, image: image },
+          {
+            onSuccess: () => {
+              reset();
+              onClose?.();
+            },
+          }
+        );
   }
 
   function onError(errors) {
     console.log(errors);
   }
   return (
-    <Form onSubmit={handleSubmit(onSubmit, onError)} 
-    type={onCloseModal ? "modal" : "regular"}>
+    <Form
+      onSubmit={handleSubmit(onSubmit, onError)}
+      type={onClose ? "modal" : "regular"}
+    >
       <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"
@@ -106,8 +100,8 @@ else createCabin({ ...data, image: data.image }, {
         <Input
           type="number"
           id="discount"
-          disabled={isWorking}
           defaultValue={0}
+          disabled={isWorking}
           {...register("discount", {
             required: "This Field is Required",
             validate: value =>
@@ -119,13 +113,14 @@ else createCabin({ ...data, image: data.image }, {
 
       <FormRow
         label="Description for website"
+        disabled={isWorking}
         error={errors?.description?.message}
       >
         <Textarea
           type="number"
           id="description"
           defaultValue=""
-          disabled={isCreating}
+          disabled={isWorking}
           {...register("description", {
             required: "This Field is Required",
           })}
@@ -144,10 +139,12 @@ else createCabin({ ...data, image: data.image }, {
 
       <FormRow>
         {/* type is an HTML attribute! */}
-        <Button variation="secondary" type="reset" onClick={() => onCloseModal?.()}>
+        <Button variation="secondary" type="reset" onClick={() => onClose?.()}>
           Cancel
         </Button>
-        <Button disabled={isWorking}>{isEditSession ? "Edit cabin" : "Create new cabin"}</Button>
+        <Button disabled={isWorking}>
+          {isEditSession ? "Edit cabin" : "Add cabin"}{" "}
+        </Button>
       </FormRow>
     </Form>
   );

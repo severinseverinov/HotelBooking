@@ -51,18 +51,17 @@ const Button = styled.button`
   }
 `;
 
-
-
-function Modal({children, onClose}) {
+function Modal({ children, onClose }) {
   return createPortal(
-  <Overlay>
-  <StyledModal>
-    <Button onClick={onClose}>
-      <HiXMark /></Button>
-    <div>{children}</div>
-  </StyledModal>
-  </Overlay>,
-  document.body
+    <Overlay>
+      <StyledModal>
+        <Button onClick={onClose}>
+          <HiXMark />
+        </Button>
+        <div>{children}</div>
+      </StyledModal>
+    </Overlay>,
+    document.body
   );
 }
 

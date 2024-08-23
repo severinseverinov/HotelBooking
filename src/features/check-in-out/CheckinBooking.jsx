@@ -8,7 +8,6 @@ import Button from "../../ui/Button";
 import ButtonText from "../../ui/ButtonText";
 import Checkbox from "../../ui/Checkbox";
 
-
 import { useMoveBack } from "../../hooks/useMoveBack";
 import { useBooking } from "../bookings/useBooking";
 import Spinner from "../../ui/Spinner";
@@ -17,7 +16,6 @@ import { useEffect } from "react";
 import { formatCurrency } from "../../utils/helpers";
 import { useCheckin } from "./useCheckin";
 import useSettings from "../settings/useSettings";
-
 
 const Box = styled.div`
   /* Box */
